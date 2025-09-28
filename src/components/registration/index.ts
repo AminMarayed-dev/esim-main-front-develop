@@ -1,0 +1,14 @@
+export { StepIndicator } from "./StepIndicator";
+export { Step1PersonalInfo } from "./Step1PersonalInfo";
+export { Step2IdCardUpload } from "./Step2IdCardUpload";
+export { Step3PhoneSelection } from "./Step3PhoneSelection";
+export { Step4ServiceSelection } from "./Step4ServiceSelection";
+export { Step5OperatorSelection } from "./Step5OperatorSelection";
+export { Step6PaymentGateway } from "./Step6PaymentGateway";
+export { InternalPaymentGateway } from "./InternalPaymentGateway";
+export { ExternalPaymentGateway } from "./ExternalPaymentGateway";
+export { Step3CustomNumber } from "./Step3PhoneNumberSearch";
+export { NumbersList } from "./NumbersList";
+export { SelectedNumbers } from "./SelectedNumbers";
+export { RegistrationSuccess } from "./RegistrationSuccess";
+export { VideoVerification } from "./VideoVerification";

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "IranYekan";
+  src: url("../assets/fonts/woff/IRANYekanX-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IranYekan";
+  src: url("../assets/fonts/woff/IRANYekanX-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IranYekan";
+  src: url("../assets/fonts/woff2/IRANYekanX-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IranYekan";
+  src: url("../assets/fonts/woff2/IRANYekanX-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}

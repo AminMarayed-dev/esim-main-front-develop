@@ -1,0 +1,319 @@
+{
+  "common": {
+    "next": "مرحله بعد",
+    "back": "بازگشت",
+    "submit": "ارسال",
+    "cancel": "لغو",
+    "loading": "در حال بارگذاری...",
+    "save": "ذخیره",
+    "confirm": "تایید",
+    "select": "انتخاب",
+    "search": "جستجو",
+    "clear": "پاک کردن",
+    "accept": "پذیرش",
+    "reject": "رد",
+    "terms": "قوانین و مقررات",
+    "privacy": "حریم خصوصی",
+    "yes": "بله",
+    "no": "خیر"
+  },
+  "language": {
+    "manuallySet": "زبان به صورت دستی تنظیم شده به",
+    "detectedLocation": "مکان تشخیص داده شده",
+    "autoDetect": "تشخیص خودکار"
+  },
+  "app": {
+    "title": "خرید eSIM داریا سل",
+    "subtitle": "با تکنولوژی eSIM داریا سل هزینه رومینگ صفر خواهد شد",
+    "newRegistration": "فرم ثبت نام جدید آماده است"
+  },
+  "step1": {
+    "title": "اطلاعات شخصی",
+    "firstName": "نام",
+    "lastName": "نام خانوادگی",
+    "nationalId": "کد ملی",
+    "email": "ایمیل",
+    "firstNamePlaceholder": "نام خود را وارد کنید",
+    "lastNamePlaceholder": "نام خانوادگی خود را وارد کنید",
+    "nationalIdPlaceholder": "1234567890",
+    "emailPlaceholder": "aminmarayed4@gmail.com",
+    "personalInfoSuccess": "اطلاعات شما با موفقیت ثبت شد!"
+  },
+  "step2": {
+    "title": "آپلود کارت ملی",
+    "uploadSuccess": "تصویر کارت ملی با موفقیت آپلود شد!",
+    "uploadInstruction": "لطفاً تصویر واضحی از کارت ملی خود آپلود کنید",
+    "heading": "تأیید هویت",
+    "subtitle": "تصویر کارت ملی خود را آپلود کنید و ویدیو تأیید هویت ضبط کنید",
+    "dropHint": "تصویر کارت ملی خود را بکشید و رها کنید",
+    "orClickButton": "یا روی دکمه زیر کلیک کنید",
+    "chooseFile": "انتخاب فایل",
+    "fileChosen": "فایل انتخاب شد: {{name}}",
+    "summary": {
+      "idUploaded": "کارت ملی آپلود شد",
+      "idRequired": "آپلود کارت ملی لازم است",
+      "videoDone": "تأیید هویت ویدیویی انجام شد",
+      "videoRequired": "تأیید هویت ویدیویی لازم است"
+    }
+  },
+"step3": {
+    "description": "شماره دلخواه خود را بسازید یا از شماره‌های پیشنهادی انتخاب کنید",
+    "suggested": {
+      "title": "شماره‌های پیشنهادی"
+    },
+    "terms": {
+      "label": "قوانین و مقررات را مطالعه کرده‌ام و قبول دارم.",
+      "helper": "برای ادامه، باید قوانین و مقررات خدمات را بپذیرید"
+    },
+    "title": "انتخاب شماره تلفن",
+    "summary": {
+      "selectedCount_one": "شما {{count}} شماره انتخاب کرده‌اید",
+      "selectedCount_other": "شما {{count}} شماره انتخاب کرده‌اید"
+    },
+    "toasts": {
+      "alreadySelected": "این شماره قبلاً انتخاب شده است"
+    },
+    "customNumber": {
+      "title": "ساخت شماره دلخواه",
+      "prefixLabel": "پیش‌شماره ثابت",
+      "digitsLabel": "رقم‌های دلخواه (۶ رقم)",
+      "digitsHelper": "در هر کادر یک رقم وارد کنید",
+      "previewLabel": "پیش‌نمایش شماره:",
+      "addButton": "افزودن به لیست",
+      "toasts": {
+        "added": "شماره به لیست اضافه شد"
+      },
+      "errors": {
+        "incompleteDigits": "لطفاً تمام ۶ رقم را وارد کنید"
+      }
+    },
+    "selected": {
+      "title": "شماره‌های انتخاب‌شده",
+      "emptyTitle": "هنوز شماره‌ای انتخاب نکرده‌اید",
+      "emptySubtitle": "از لیست کنار، شماره‌های موردنظر خود را انتخاب کنید",
+      "removeAria": "حذف شماره {{number}}"
+    }
+  },
+  "step4": {
+    "title": "انتخاب سرویس‌ها",
+    "subtitle": "سرویس‌های موردنیاز خود را انتخاب کنید",
+    "esimLineTypeTitle": "نوع خط eSIM",
+    "firstSimCardTitle": "آیا این اولین سیم‌کارت شماست؟",
+    "availableServices": {
+      "title": "سرویس‌های موجود (اختیاری)",
+      "note": "تمام سرویس‌ها رایگان هستند"
+    },
+    "summary": {
+      "selectedCount_one": "شما {{count}} سرویس انتخاب کرده‌اید",
+      "selectedCount_other": "شما {{count}} سرویس انتخاب کرده‌اید"
+    },
+    "cta": {
+      "complete": "تکمیل ثبت‌نام"
+    },
+    "esimLineTypes": {
+      "esimCredit": "خط eSIM اعتباری",
+      "esimPermanent": "خط eSIM دائمی"
+    }
+  },
+ "step5": {
+    "title": "انتخاب اپراتورها و پوشش eSIM",
+    "subtitle": "اپراتورهای داخلی و خارجی موردنظر خود را انتخاب کنید",
+    "domestic": {
+      "title": "اپراتورهای داخلی",
+      "selected_one": "{{count}} اپراتور انتخاب شده",
+      "selected_other": "{{count}} اپراتور انتخاب شده"
+    },
+    "foreign": {
+      "title": "اپراتورهای خارجی",
+      "selected_one": "{{count}} اپراتور انتخاب شده",
+      "selected_other": "{{count}} اپراتور انتخاب شده"
+    },
+    "map": {
+      "title": "نقشه پوشش جهانی eSIM داریا سل",
+      "subtitle": "مناطق پوشش‌شده در سراسر جهان",
+      "loadingTitle": "در حال بارگذاری نقشه...",
+      "loadingSubtitle": "پوشش جهانی eSIM داریا سل"
+    },
+    "regions": {
+      "asia": "آسیا",
+      "europe": "اروپا",
+      "americas": "آمریکا",
+      "middleEast": "خاورمیانه"
+    },
+    "legend": {
+      "iran": "ایران",
+      "hq": "مرکز داریا سل",
+      "cities_one": "{{count}} شهر",
+      "cities_other": "{{count}} شهر"
+    },
+    "count": {
+      "operators_one": "{{count}} اپراتور",
+      "operators_other": "{{count}} اپراتور",
+      "services_one": "{{count}} سرویس",
+      "services_other": "{{count}} سرویس"
+    },
+    "cost": {
+      "title": "جدول هزینه‌ها",
+      "subtitle": "محاسبه دقیق هزینه‌های سرویس شما",
+      "columns": {
+        "item": "آیتم",
+        "qtyType": "تعداد/نوع",
+        "cost": "هزینه (تومان)"
+      },
+      "rows": {
+        "esimType": "نوع خط eSIM",
+        "domestic": "اپراتورهای داخلی",
+        "foreign": "اپراتورهای خارجی",
+        "services": "سرویس‌های انتخابی",
+        "servicesFree": "رایگان"
+      },
+      "total": "مجموع کل",
+      "totalWith": "{{total}} تومان"
+    },
+    "servicesSelected": {
+      "title": "سرویس‌های رایگان انتخاب‌شده:"
+    },
+    "noServices": "هیچ سرویسی انتخاب نشده است — همه سرویس‌ها رایگان هستند",
+    "cta": {
+      "prev": "مرحله قبل",
+      "pay": "پرداخت {{total}} تومان"
+    },
+    "summary": "شما {{domestic}} اپراتور داخلی و {{foreign}} اپراتور خارجی انتخاب کرده‌اید"
+  },
+  "success": {
+    "title": "ثبت نام با موفقیت تکمیل شد!",
+    "message": "ثبت نام شما با موفقیت تکمیل شد",
+    "newRegistration": "ثبت نام جدید"
+  },
+  "validation": {
+    "firstNameMin": "نام باید حداقل ۲ کاراکتر باشد",
+    "lastNameMin": "نام خانوادگی باید حداقل ۲ کاراکتر باشد",
+    "nationalIdFormat": "کد ملی باید ۱۰ رقم باشد",
+    "zipCodeFormat": "کد پستی باید ۱۰ رقم باشد",
+    "selectIdCard": "لطفاً تصویر کارت ملی خود را انتخاب کنید",
+    "selectNumbers": "لطفاً حداقل یک شماره انتخاب کنید",
+    "acceptTerms": "لطفاً قوانین و مقررات را بپذیرید",
+    "selectServices": "لطفاً حداقل یک سرویس انتخاب کنید",
+    "selectDomesticOperators": "لطفاً حداقل یک اپراتور داخلی انتخاب کنید",
+    "selectForeignOperators": "لطفاً حداقل یک اپراتور خارجی انتخاب کنید"
+  },
+  "services": {
+    "internet": "اینترنت",
+    "contentEntertainment": "خدمات اختصاصی محتوا و سرگرمی",
+    "foreignGuestSim": "سیم کارت میهمانان خارجی ( هم داخل و هم خارج از کشور)",
+    "convergenceInternational": "خدمات همگرایی و بین المللی",
+    "paymentServices": "خدمات پرداخت",
+    "callServices": "خدمات مکالمه",
+    "smsServices": "خدمات پیامک",
+    "iptvServices": "خدمات IPTV",
+    "esimCredit": "خط eSIM اعتباری",
+    "esimPermanent": "خط eSIM دائمی"
+  },
+  "operators": {
+    "domestic": {
+      "hamrahAvval": "همراه اول",
+      "irancell": "ایرانسل",
+      "rightel": "رایتل"
+    },
+    "foreign": {
+      "vodafone": "Vodafone",
+      "tmobile": "T-Mobile",
+      "att": "AT&T",
+      "deutscheTelekon": "Deutsche Telekom",
+      "telefonica": "Telefonica"
+    }
+  },
+  "step": {
+    "1": "۱",
+    "2": "۲",
+    "3": "۳",
+    "4": "۴",
+    "5": "۵",
+    "6": "۶"
+  },
+  "loading": {
+    "title": "در حال بارگذاری...",
+    "subtitle": "لطفا صبر کنید تا درخواست شما پردازش شود"
+  },
+  "video": {
+    "header": {
+      "title": "تأیید هویت ویدیویی",
+      "subtitle": "برای تأیید هویت، ویدیو ۵ ثانیه‌ای از خود ضبط کنید"
+    },
+    "instructions": {
+      "title": "راهنمای ضبط ویدیو",
+      "bullets": {
+        "one": "ویدیو به مدت ۵ ثانیه ضبط خواهد شد",
+        "two": "در مقابل دوربین قرار بگیرید و واضح صحبت کنید",
+        "three": "متن زیر را با صدای بلند و واضح بخوانید:"
+      },
+      "requiredText": "من {{firstName}} {{lastName}} هستم و می‌خواهم eSIM داریا سل بخرم"
+    },
+    "httpsWarning": {
+      "title": "هشدار HTTPS",
+      "body": "برای عملکرد صحیح دوربین در سرور باید از HTTPS استفاده کنید. getUserMedia فقط در محیط‌های امن (HTTPS یا localhost) کار می‌کند."
+    },
+    "debug": {
+      "title": "اطلاعات فنی (Debug)",
+      "protocol": "پروتکل",
+      "hostname": "نام میزبان",
+      "userAgent": "عامل کاربر",
+      "videoTracks": "مسیرهای ویدیو",
+      "audioTracks": "مسیرهای صدا",
+      "videoSettings": "تنظیمات ویدیو"
+    },
+    "idle": {
+      "title": "آماده ضبط ویدیو",
+      "desc": "برای شروع تأیید هویت، دسترسی به دوربین را مجاز کنید",
+      "start": "شروع تأیید هویت"
+    },
+    "permission": {
+      "title": "درخواست دسترسی به دوربین",
+      "desc": "لطفاً دسترسی به دوربین و میکروفون را مجاز کنید"
+    },
+    "countdown": {
+      "getReady": "آماده شوید..."
+    },
+    "ready": {
+      "start": "شروع ضبط"
+    },
+    "rec": {
+      "badge": "در حال ضبط",
+      "reading": "در حال ضبط... لطفاً متن را با صدای بلند بخوانید"
+    },
+    "recorded": {
+      "retry": "ضبط مجدد",
+      "submit": "تأیید و ارسال"
+    },
+    "processing": {
+      "title": "در حال بررسی ویدیو",
+      "desc": "لطفاً صبر کنید، ویدیو شما در حال تأیید است..."
+    },
+    "verified": {
+      "successTitle": "تأیید موفق",
+      "failTitle": "تأیید ناموفق",
+      "retry": "تلاش مجدد"
+    },
+    "toasts": {
+      "cameraReady": "دوربین آماده است",
+      "cameraReadyNoAudio": "دوربین آماده است (بدون صدا)",
+      "notSupported": "مرورگر شما از ضبط ویدیو پشتیبانی نمی‌کند.",
+      "recError": "خطا در ضبط ویدیو",
+      "startRecError": "خطا در شروع ضبط ویدیو",
+      "fileEmpty": "فایل ویدیو خالی است.",
+      "verifySuccess": "تأیید هویت با موفقیت انجام شد!",
+      "verifyFail": "تأیید هویت ناموفق بود. لطفاً دوباره تلاش کنید.",
+      "verifyError": "خطا در تأیید هویت. لطفاً دوباره تلاش کنید."
+    },
+    "errors": {
+      "cameraDenied": "دسترسی به دوربین رد شد. لطفاً دسترسی را مجاز کنید.",
+      "httpsRequired": " توجه: برای عملکرد صحیح در سرور، HTTPS مورد نیاز است.",
+      "cameraNotFound": "دوربین پیدا نشد. لطفاً دوربین را وصل کنید.",
+      "notSupported": "مرورگر شما از این قابلیت پشتیبانی نمی‌کند.",
+      "micIssueRetryVideoOnly": "مشکل در میکروفون/تنظیمات. تلاش با ویدیو بدون صدا...",
+      "cameraAccessFailed": "دسترسی به دوربین ناموفق بود.",
+      "cameraNotReady": "دوربین آماده نیست"
+    }
+  }
+  
+}

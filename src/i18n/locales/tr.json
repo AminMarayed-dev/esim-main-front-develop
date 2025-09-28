@@ -1,0 +1,100 @@
+{
+  "common": {
+    "next": "İleri",
+    "back": "Geri",
+    "submit": "Gönder",
+    "cancel": "İptal",
+    "loading": "Yükleniyor...",
+    "save": "Kaydet",
+    "confirm": "Onayla",
+    "select": "Seç",
+    "search": "Ara",
+    "clear": "Temizle",
+    "accept": "Kabul Et",
+    "reject": "Reddet",
+    "terms": "Şartlar ve Koşullar",
+    "privacy": "Gizlilik Politikası"
+  },
+  "app": {
+    "title": "Dariya Cell eSIM Satın Al",
+    "subtitle": "Dariya Cell eSIM teknolojisi ile roaming maliyetleri sıfır olacak",
+    "newRegistration": "Yeni kayıt formu hazır"
+  },
+  "step1": {
+    "title": "Kişisel Bilgiler",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "nationalId": "Kimlik Numarası",
+    "zipCode": "Posta Kodu",
+    "firstNamePlaceholder": "Adınızı girin",
+    "lastNamePlaceholder": "Soyadınızı girin",
+    "nationalIdPlaceholder": "1234567890",
+    "zipCodePlaceholder": "1234567890"
+  },
+  "step2": {
+    "title": "Kimlik Kartı Yükleme",
+    "uploadSuccess": "Kimlik kartı resmi başarıyla yüklendi!",
+    "uploadInstruction": "Lütfen kimlik kartınızın net bir fotoğrafını yükleyin"
+  },
+  "step3": {
+    "title": "Telefon Numarası Seçimi",
+    "numbersSuccess": "Numaralar başarıyla seçildi!",
+    "selectAtLeastOne": "Lütfen en az bir numara seçin",
+    "acceptTermsRequired": "Lütfen şartları ve koşulları kabul edin"
+  },
+  "step4": {
+    "title": "Hizmet Seçimi",
+    "servicesSuccess": "Hizmetler başarıyla seçildi!",
+    "selectAtLeastOneService": "Lütfen en az bir hizmet seçin"
+  },
+  "step5": {
+    "title": "Operatör Seçimi",
+    "domesticOperators": "Yerel Operatörler",
+    "foreignOperators": "Yabancı Operatörler",
+    "selectAtLeastOneDomestic": "Lütfen en az bir yerel operatör seçin",
+    "selectAtLeastOneForeign": "Lütfen en az bir yabancı operatör seçin"
+  },
+  "success": {
+    "title": "Kayıt Başarıyla Tamamlandı!",
+    "message": "Kaydınız başarıyla tamamlandı",
+    "newRegistration": "Yeni Kayıt"
+  },
+  "validation": {
+    "firstNameMin": "Ad en az 2 karakter olmalıdır",
+    "lastNameMin": "Soyad en az 2 karakter olmalıdır",
+    "nationalIdFormat": "Kimlik numarası 10 haneli olmalıdır",
+    "zipCodeFormat": "Posta kodu 10 haneli olmalıdır",
+    "selectIdCard": "Lütfen kimlik kartı resminizi seçin",
+    "selectNumbers": "Lütfen en az bir numara seçin",
+    "acceptTerms": "Lütfen şartları ve koşulları kabul edin",
+    "selectServices": "Lütfen en az bir hizmet seçin",
+    "selectDomesticOperators": "Lütfen en az bir yerel operatör seçin",
+    "selectForeignOperators": "Lütfen en az bir yabancı operatör seçin"
+  },
+  "services": {
+    "internet": "İnternet",
+    "contentEntertainment": "İçerik ve Eğlence Hizmetleri",
+    "foreignGuestSim": "Yabancı Misafir SIM Kartı (hem yerel hem uluslararası)",
+    "convergenceInternational": "Yakınsama ve Uluslararası Hizmetler",
+    "paymentServices": "Ödeme Hizmetleri",
+    "callServices": "Arama Hizmetleri",
+    "smsServices": "SMS Hizmetleri",
+    "iptvServices": "IPTV Hizmetleri",
+    "esimCredit": "Kredili eSIM Hattı",
+    "esimPermanent": "Kalıcı eSIM Hattı"
+  },
+  "operators": {
+    "domestic": {
+      "hamrahAvval": "همراه اول",
+      "irancell": "ایرانسل",
+      "rightel": "رایتل"
+    },
+    "foreign": {
+      "vodafone": "Vodafone",
+      "tmobile": "T-Mobile",
+      "att": "AT&T",
+      "deutscheTelekon": "Deutsche Telekom",
+      "telefonica": "Telefonica"
+    }
+  }
+}

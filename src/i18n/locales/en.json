@@ -1,0 +1,342 @@
+{
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "save": "Save",
+    "confirm": "Confirm",
+    "select": "Select",
+    "search": "Search",
+    "clear": "Clear",
+    "accept": "Accept",
+    "reject": "Reject",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "language": {
+    "manuallySet": "Language manually set to",
+    "detectedLocation": "detected location",
+    "autoDetect": "Auto-detect"
+  },
+  "app": {
+    "title": "Dariya Cell eSIM Purchase",
+    "subtitle": "With Dariya Cell eSIM technology, roaming costs will be zero",
+    "newRegistration": "New registration form is ready"
+  },
+  "step1": {
+    "title": "Personal Information",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "nationalId": "National ID",
+    "zipCode": "Zip Code",
+    "email":"Email",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastNamePlaceholder": "Enter your last name",
+    "nationalIdPlaceholder": "1234567890",
+    "emailPlaceholder": "aminmarayed4@gmail.com",
+    "personalInfoSuccess": "Personal information saved successfully!"
+  },
+  "step2": {
+    "title": "ID Card Upload",
+    "uploadSuccess": "ID card image uploaded successfully!",
+    "uploadInstruction": "Please upload a clear photo of your national ID card",
+    "heading": "Identity Verification",
+    "subtitle": "Upload your national ID card photo and record the verification video",
+    "dropHint": "Drag and drop your ID card image",
+    "orClickButton": "or click the button below",
+    "chooseFile": "Choose file",
+    "fileChosen": "File selected: {{name}}",
+    "summary": {
+      "idUploaded": "ID card uploaded",
+      "idRequired": "ID card upload is required",
+      "videoDone": "Video verification completed",
+      "videoRequired": "Video verification is required"
+    }
+  },
+"step3": {
+    "description": "Create your desired number or select from suggested numbers",
+    "suggested": {
+      "title": "Suggested Numbers"
+    },
+    "terms": {
+      "label": "I have read and accept the terms and conditions.",
+      "helper": "To continue, you must accept the terms and conditions"
+    },
+    "title": "Phone Number Selection",
+    "summary": {
+      "selectedCount_one": "You have selected {{count}} number",
+      "selectedCount_other": "You have selected {{count}} numbers"
+    },
+    "toasts": {
+      "alreadySelected": "This number is already selected"
+    },
+    "customNumber": {
+      "title": "Build a Custom Number",
+      "prefixLabel": "Fixed Prefix",
+      "digitsLabel": "Desired digits (6 digits)",
+      "digitsHelper": "Enter one digit per box",
+      "previewLabel": "Number preview:",
+      "addButton": "Add to list",
+      "toasts": {
+        "added": "Number added to list"
+      },
+      "errors": {
+        "incompleteDigits": "Please enter all 6 digits"
+      }
+    },
+    "selected": {
+      "title": "Selected Numbers",
+      "emptyTitle": "No numbers selected yet",
+      "emptySubtitle": "Select the numbers you want from the list",
+      "removeAria": "Remove number {{number}}"
+    }
+  },
+  "step4": {
+    "title": "Service Selection",
+    "subtitle": "Choose the services you need",
+    "esimLineTypeTitle": "eSIM line type",
+    "firstSimCardTitle": "Is this your first SIM card?",
+    "availableServices": {
+      "title": "Available services (optional)",
+      "note": "All services are free"
+    },
+    "summary": {
+      "selectedCount_one": "You have selected {{count}} service",
+      "selectedCount_other": "You have selected {{count}} services"
+    },
+    "cta": {
+      "complete": "Complete registration"
+    },
+    "esimLineTypes": {
+      "esimCredit": "Credit eSIM Line",
+      "esimPermanent": "Permanent eSIM Line"
+    }
+  },
+  "step5": {
+    "title": "Operator Selection & eSIM Coverage",
+    "subtitle": "Choose your preferred domestic and foreign operators",
+    "domestic": {
+      "title": "Domestic Operators",
+      "selected_one": "{{count}} operator selected",
+      "selected_other": "{{count}} operators selected"
+    },
+    "foreign": {
+      "title": "Foreign Operators",
+      "selected_one": "{{count}} operator selected",
+      "selected_other": "{{count}} operators selected"
+    },
+    "map": {
+      "title": "Dariya Cell eSIM Global Coverage Map",
+      "subtitle": "Covered regions worldwide",
+      "loadingTitle": "Loading the map...",
+      "loadingSubtitle": "Dariya Cell global eSIM coverage"
+    },
+    "regions": {
+      "asia": "Asia",
+      "europe": "Europe",
+      "americas": "Americas",
+      "middleEast": "Middle East"
+    },
+    "legend": {
+      "iran": "Iran",
+      "hq": "Dariya Cell HQ",
+      "cities_one": "{{count}} city",
+      "cities_other": "{{count}} cities"
+    },
+    "count": {
+      "operators_one": "{{count}} operator",
+      "operators_other": "{{count}} operators",
+      "services_one": "{{count}} service",
+      "services_other": "{{count}} services"
+    },
+    "cost": {
+      "title": "Cost Table",
+      "subtitle": "Accurate calculation of your service costs",
+      "columns": {
+        "item": "Item",
+        "qtyType": "Quantity/Type",
+        "cost": "Cost (Toman)"
+      },
+      "rows": {
+        "esimType": "eSIM line type",
+        "domestic": "Domestic operators",
+        "foreign": "Foreign operators",
+        "services": "Selected services",
+        "servicesFree": "Free"
+      },
+      "total": "Total",
+      "totalWith": "{{total}} Toman"
+    },
+    "servicesSelected": {
+      "title": "Selected free services:"
+    },
+    "noServices": "No services selected — all services are free",
+    "cta": {
+      "prev": "Previous step",
+      "pay": "Pay {{total}} Toman"
+    },
+    "summary": "You selected {{domestic}} domestic operator(s) and {{foreign}} foreign operator(s)"
+  },
+"success": {
+    "badge": "Congratulations!",
+    "title": "Registration completed successfully!",
+    "welcome": "Welcome, {{firstName}} {{lastName}}!",
+    "welcomeFamily": "Welcome to the Dariya Cell family",
+    "numbers": {
+      "title": "Your registered numbers",
+      "selectedCount_one": "You have selected {{count}} number",
+      "selectedCount_other": "You have selected {{count}} numbers"
+    },
+    "dashboard": {
+      "title": "Manage your SIMs",
+      "desc": "Through the Dariya Cell dashboard, you can manage all your SIM cards.",
+      "features": {
+        "dataUsage": "View data usage",
+        "packages": "Manage packages",
+        "transactions": "Transactions history",
+        "support": "24/7 support"
+      },
+      "cta": "Go to management dashboard"
+    },
+    "more": {
+      "question": "Do you want to register for someone else too?",
+      "newRegistration": "New Registration"
+    },
+    "footer": "Iran's first eSIM network, Dariya Cell, belongs to Daria Intelligent Exchange & Analytics Co."
+  },
+  "validation": {
+    "firstNameMin": "First name must be at least 2 characters",
+    "lastNameMin": "Last name must be at least 2 characters",
+    "nationalIdFormat": "National ID must be 10 digits",
+    "zipCodeFormat": "Zip code must be 10 digits",
+    "selectIdCard": "Please select your ID card image",
+    "selectNumbers": "Please select at least one number",
+    "acceptTerms": "Please accept the terms and conditions",
+    "selectServices": "Please select at least one service",
+    "selectDomesticOperators": "Please select at least one domestic operator",
+    "selectForeignOperators": "Please select at least one foreign operator"
+  },
+  "services": {
+    "internet": "Internet",
+    "contentEntertainment": "Content and Entertainment Services",
+    "foreignGuestSim": "Foreign Guest SIM Card (both domestic and international)",
+    "convergenceInternational": "Convergence and International Services",
+    "paymentServices": "Payment Services",
+    "callServices": "Call Services",
+    "smsServices": "SMS Services",
+    "iptvServices": "IPTV Services",
+    "esimCredit": "Credit eSIM Line",
+    "esimPermanent": "Permanent eSIM Line"
+  },
+  "operators": {
+    "domestic": {
+      "hamrahAvval": "Hamrah-e Avval",
+      "irancell": "Irancell",
+      "rightel": "Rightel"
+    },
+    "foreign": {
+      "vodafone": "Vodafone",
+      "tmobile": "T-Mobile",
+      "att": "AT&T",
+      "deutscheTelekon": "Deutsche Telekom",
+      "telefonica": "Telefonica"
+    }
+  },
+  "step": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6"
+  },
+  "loading": {
+    "title": "Loading...",
+    "subtitle": "Please wait while we process your request"
+  },
+  "video": {
+    "header": {
+      "title": "Video Identity Verification",
+      "subtitle": "Record a 5-second video of yourself to verify your identity"
+    },
+    "instructions": {
+      "title": "Video Recording Guide",
+      "bullets": {
+        "one": "The video will be recorded for 5 seconds",
+        "two": "Face the camera and speak clearly",
+        "three": "Read the following text aloud:"
+      },
+      "requiredText": "I am {{firstName}} {{lastName}} and I want to buy Dariya Cell eSIM"
+    },
+    "httpsWarning": {
+      "title": "HTTPS Warning",
+      "body": "For the camera to work on the server, HTTPS is required. getUserMedia only works in secure contexts (HTTPS or localhost)."
+    },
+    "debug": {
+      "title": "Technical info (Debug)",
+      "protocol": "Protocol",
+      "hostname": "Hostname",
+      "userAgent": "User Agent",
+      "videoTracks": "Video Tracks",
+      "audioTracks": "Audio Tracks",
+      "videoSettings": "Video Settings"
+    },
+    "idle": {
+      "title": "Ready to record video",
+      "desc": "To start verification, allow access to the camera",
+      "start": "Start verification"
+    },
+    "permission": {
+      "title": "Requesting camera access",
+      "desc": "Please allow access to the camera and microphone"
+    },
+    "countdown": {
+      "getReady": "Get ready..."
+    },
+    "ready": {
+      "start": "Start recording"
+    },
+    "rec": {
+      "badge": "Recording",
+      "reading": "Recording... please read the text aloud"
+    },
+    "recorded": {
+      "retry": "Record again",
+      "submit": "Confirm & Submit"
+    },
+    "processing": {
+      "title": "Reviewing video",
+      "desc": "Please wait, your video is being verified..."
+    },
+    "verified": {
+      "successTitle": "Verification successful",
+      "failTitle": "Verification failed",
+      "retry": "Try again"
+    },
+    "toasts": {
+      "cameraReady": "Camera is ready",
+      "cameraReadyNoAudio": "Camera is ready (no audio)",
+      "notSupported": "Your browser does not support video recording.",
+      "recError": "Error during video recording",
+      "startRecError": "Error starting video recording",
+      "fileEmpty": "Video file is empty.",
+      "verifySuccess": "Verification completed successfully!",
+      "verifyFail": "Verification failed. Please try again.",
+      "verifyError": "Verification error. Please try again."
+    },
+    "errors": {
+      "cameraDenied": "Camera access denied. Please allow access.",
+      "httpsRequired": " Note: HTTPS is required for proper operation on servers.",
+      "cameraNotFound": "Camera not found. Please connect a camera.",
+      "notSupported": "Your browser does not support this feature.",
+      "micIssueRetryVideoOnly": "Issue with microphone/settings. Trying video without audio...",
+      "cameraAccessFailed": "Camera access failed.",
+      "cameraNotReady": "Camera not ready"
+    }
+  }
+}
+

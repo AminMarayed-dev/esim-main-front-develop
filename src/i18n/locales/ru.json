@@ -1,0 +1,100 @@
+{
+  "common": {
+    "next": "Далее",
+    "back": "Назад",
+    "submit": "Отправить",
+    "cancel": "Отмена",
+    "loading": "Загрузка...",
+    "save": "Сохранить",
+    "confirm": "Подтвердить",
+    "select": "Выбрать",
+    "search": "Поиск",
+    "clear": "Очистить",
+    "accept": "Принять",
+    "reject": "Отклонить",
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности"
+  },
+  "app": {
+    "title": "Покупка eSIM Dariya Cell",
+    "subtitle": "С технологией eSIM Dariya Cell расходы на роуминг будут равны нулю",
+    "newRegistration": "Новая форма регистрации готова"
+  },
+  "step1": {
+    "title": "Личная информация",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "nationalId": "Номер удостоверения",
+    "zipCode": "Почтовый индекс",
+    "firstNamePlaceholder": "Введите ваше имя",
+    "lastNamePlaceholder": "Введите вашу фамилию",
+    "nationalIdPlaceholder": "1234567890",
+    "zipCodePlaceholder": "1234567890"
+  },
+  "step2": {
+    "title": "Загрузка удостоверения личности",
+    "uploadSuccess": "Изображение удостоверения личности успешно загружено!",
+    "uploadInstruction": "Пожалуйста, загрузите четкое фото вашего удостоверения личности"
+  },
+  "step3": {
+    "title": "Выбор номера телефона",
+    "numbersSuccess": "Номера успешно выбраны!",
+    "selectAtLeastOne": "Пожалуйста, выберите хотя бы один номер",
+    "acceptTermsRequired": "Пожалуйста, примите условия использования"
+  },
+  "step4": {
+    "title": "Выбор услуги",
+    "servicesSuccess": "Услуги успешно выбраны!",
+    "selectAtLeastOneService": "Пожалуйста, выберите хотя бы одну услугу"
+  },
+  "step5": {
+    "title": "Выбор оператора",
+    "domesticOperators": "Местные операторы",
+    "foreignOperators": "Зарубежные операторы",
+    "selectAtLeastOneDomestic": "Пожалуйста, выберите хотя бы одного местного оператора",
+    "selectAtLeastOneForeign": "Пожалуйста, выберите хотя бы одного зарубежного оператора"
+  },
+  "success": {
+    "title": "Регистрация успешно завершена!",
+    "message": "Ваша регистрация была успешно завершена",
+    "newRegistration": "Новая регистрация"
+  },
+  "validation": {
+    "firstNameMin": "Имя должно содержать не менее 2 символов",
+    "lastNameMin": "Фамилия должна содержать не менее 2 символов",
+    "nationalIdFormat": "Номер удостоверения должен содержать 10 цифр",
+    "zipCodeFormat": "Почтовый индекс должен содержать 10 цифр",
+    "selectIdCard": "Пожалуйста, выберите изображение вашего удостоверения личности",
+    "selectNumbers": "Пожалуйста, выберите хотя бы один номер",
+    "acceptTerms": "Пожалуйста, примите условия использования",
+    "selectServices": "Пожалуйста, выберите хотя бы одну услугу",
+    "selectDomesticOperators": "Пожалуйста, выберите хотя бы одного местного оператора",
+    "selectForeignOperators": "Пожалуйста, выберите хотя бы одного зарубежного оператора"
+  },
+  "services": {
+    "internet": "Интернет",
+    "contentEntertainment": "Услуги контента и развлечений",
+    "foreignGuestSim": "SIM-карта для иностранных гостей (национальная и международная)",
+    "convergenceInternational": "Услуги конвергенции и международные",
+    "paymentServices": "Платежные услуги",
+    "callServices": "Услуги звонков",
+    "smsServices": "SMS услуги",
+    "iptvServices": "IPTV услуги",
+    "esimCredit": "Кредитная линия eSIM",
+    "esimPermanent": "Постоянная линия eSIM"
+  },
+  "operators": {
+    "domestic": {
+      "hamrahAvval": "همراه اول",
+      "irancell": "ایرانسل",
+      "rightel": "رایتل"
+    },
+    "foreign": {
+      "vodafone": "Vodafone",
+      "tmobile": "T-Mobile",
+      "att": "AT&T",
+      "deutscheTelekon": "Deutsche Telekom",
+      "telefonica": "Telefonica"
+    }
+  }
+}

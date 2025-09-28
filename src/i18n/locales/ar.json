@@ -1,0 +1,100 @@
+{
+  "common": {
+    "next": "التالي",
+    "back": "رجوع",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "loading": "جاري التحميل...",
+    "save": "حفظ",
+    "confirm": "تأكيد",
+    "select": "اختيار",
+    "search": "بحث",
+    "clear": "مسح",
+    "accept": "قبول",
+    "reject": "رفض",
+    "terms": "الشروط والأحكام",
+    "privacy": "سياسة الخصوصية"
+  },
+  "app": {
+    "title": "شراء eSIM داريا سيل",
+    "subtitle": "مع تقنية eSIM داريا سيل ستكون تكاليف التجوال صفر",
+    "newRegistration": "نموذج التسجيل الجديد جاهز"
+  },
+  "step1": {
+    "title": "المعلومات الشخصية",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "nationalId": "الرقم القومي",
+    "zipCode": "الرمز البريدي",
+    "firstNamePlaceholder": "أدخل اسمك الأول",
+    "lastNamePlaceholder": "أدخل اسم عائلتك",
+    "nationalIdPlaceholder": "1234567890",
+    "zipCodePlaceholder": "1234567890"
+  },
+  "step2": {
+    "title": "رفع بطاقة الهوية",
+    "uploadSuccess": "تم رفع صورة بطاقة الهوية بنجاح!",
+    "uploadInstruction": "يرجى رفع صورة واضحة لبطاقة هويتك الوطنية"
+  },
+  "step3": {
+    "title": "اختيار رقم الهاتف",
+    "numbersSuccess": "تم اختيار الأرقام بنجاح!",
+    "selectAtLeastOne": "يرجى اختيار رقم واحد على الأقل",
+    "acceptTermsRequired": "يرجى قبول الشروط والأحكام"
+  },
+  "step4": {
+    "title": "اختيار الخدمة",
+    "servicesSuccess": "تم اختيار الخدمات بنجاح!",
+    "selectAtLeastOneService": "يرجى اختيار خدمة واحدة على الأقل"
+  },
+  "step5": {
+    "title": "اختيار المشغل",
+    "domesticOperators": "المشغلون المحليون",
+    "foreignOperators": "المشغلون الأجانب",
+    "selectAtLeastOneDomestic": "يرجى اختيار مشغل محلي واحد على الأقل",
+    "selectAtLeastOneForeign": "يرجى اختيار مشغل أجنبي واحد على الأقل"
+  },
+  "success": {
+    "title": "تم التسجيل بنجاح!",
+    "message": "تم تسجيلك بنجاح",
+    "newRegistration": "تسجيل جديد"
+  },
+  "validation": {
+    "firstNameMin": "يجب أن يكون الاسم الأول على الأقل حرفين",
+    "lastNameMin": "يجب أن يكون اسم العائلة على الأقل حرفين",
+    "nationalIdFormat": "يجب أن يكون الرقم القومي 10 أرقام",
+    "zipCodeFormat": "يجب أن يكون الرمز البريدي 10 أرقام",
+    "selectIdCard": "يرجى اختيار صورة بطاقة هويتك",
+    "selectNumbers": "يرجى اختيار رقم واحد على الأقل",
+    "acceptTerms": "يرجى قبول الشروط والأحكام",
+    "selectServices": "يرجى اختيار خدمة واحدة على الأقل",
+    "selectDomesticOperators": "يرجى اختيار مشغل محلي واحد على الأقل",
+    "selectForeignOperators": "يرجى اختيار مشغل أجنبي واحد على الأقل"
+  },
+  "services": {
+    "internet": "الإنترنت",
+    "contentEntertainment": "خدمات المحتوى والترفيه المخصصة",
+    "foreignGuestSim": "بطاقة SIM للضيوف الأجانب (محلياً ودولياً)",
+    "convergenceInternational": "خدمات التقارب والدولية",
+    "paymentServices": "خدمات الدفع",
+    "callServices": "خدمات المكالمات",
+    "smsServices": "خدمات الرسائل النصية",
+    "iptvServices": "خدمات IPTV",
+    "esimCredit": "خط eSIM ائتماني",
+    "esimPermanent": "خط eSIM دائم"
+  },
+  "operators": {
+    "domestic": {
+      "hamrahAvval": "همراه اول",
+      "irancell": "ایرانسل",
+      "rightel": "رایتل"
+    },
+    "foreign": {
+      "vodafone": "Vodafone",
+      "tmobile": "T-Mobile",
+      "att": "AT&T",
+      "deutscheTelekon": "Deutsche Telekom",
+      "telefonica": "Telefonica"
+    }
+  }
+}

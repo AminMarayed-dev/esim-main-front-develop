@@ -1,0 +1,100 @@
+{
+  "common": {
+    "next": "Suivant",
+    "back": "Retour",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "loading": "Chargement...",
+    "save": "Sauvegarder",
+    "confirm": "Confirmer",
+    "select": "Sélectionner",
+    "search": "Rechercher",
+    "clear": "Effacer",
+    "accept": "Accepter",
+    "reject": "Rejeter",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité"
+  },
+  "app": {
+    "title": "Achat eSIM Dariya Cell",
+    "subtitle": "Avec la technologie eSIM Dariya Cell, les coûts de roaming seront nuls",
+    "newRegistration": "Le nouveau formulaire d'inscription est prêt"
+  },
+  "step1": {
+    "title": "Informations personnelles",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "nationalId": "Numéro d'identité",
+    "zipCode": "Code postal",
+    "firstNamePlaceholder": "Entrez votre prénom",
+    "lastNamePlaceholder": "Entrez votre nom de famille",
+    "nationalIdPlaceholder": "1234567890",
+    "zipCodePlaceholder": "1234567890"
+  },
+  "step2": {
+    "title": "Téléchargement de la carte d'identité",
+    "uploadSuccess": "Image de la carte d'identité téléchargée avec succès!",
+    "uploadInstruction": "Veuillez télécharger une photo claire de votre carte d'identité"
+  },
+  "step3": {
+    "title": "Sélection du numéro de téléphone",
+    "numbersSuccess": "Numéros sélectionnés avec succès!",
+    "selectAtLeastOne": "Veuillez sélectionner au moins un numéro",
+    "acceptTermsRequired": "Veuillez accepter les conditions d'utilisation"
+  },
+  "step4": {
+    "title": "Sélection du service",
+    "servicesSuccess": "Services sélectionnés avec succès!",
+    "selectAtLeastOneService": "Veuillez sélectionner au moins un service"
+  },
+  "step5": {
+    "title": "Sélection de l'opérateur",
+    "domesticOperators": "Opérateurs domestiques",
+    "foreignOperators": "Opérateurs étrangers",
+    "selectAtLeastOneDomestic": "Veuillez sélectionner au moins un opérateur domestique",
+    "selectAtLeastOneForeign": "Veuillez sélectionner au moins un opérateur étranger"
+  },
+  "success": {
+    "title": "Inscription terminée avec succès!",
+    "message": "Votre inscription a été terminée avec succès",
+    "newRegistration": "Nouvelle inscription"
+  },
+  "validation": {
+    "firstNameMin": "Le prénom doit contenir au moins 2 caractères",
+    "lastNameMin": "Le nom de famille doit contenir au moins 2 caractères",
+    "nationalIdFormat": "Le numéro d'identité doit contenir 10 chiffres",
+    "zipCodeFormat": "Le code postal doit contenir 10 chiffres",
+    "selectIdCard": "Veuillez sélectionner l'image de votre carte d'identité",
+    "selectNumbers": "Veuillez sélectionner au moins un numéro",
+    "acceptTerms": "Veuillez accepter les conditions d'utilisation",
+    "selectServices": "Veuillez sélectionner au moins un service",
+    "selectDomesticOperators": "Veuillez sélectionner au moins un opérateur domestique",
+    "selectForeignOperators": "Veuillez sélectionner au moins un opérateur étranger"
+  },
+  "services": {
+    "internet": "Internet",
+    "contentEntertainment": "Services de contenu et de divertissement",
+    "foreignGuestSim": "Carte SIM invité étranger (national et international)",
+    "convergenceInternational": "Services de convergence et internationaux",
+    "paymentServices": "Services de paiement",
+    "callServices": "Services d'appel",
+    "smsServices": "Services SMS",
+    "iptvServices": "Services IPTV",
+    "esimCredit": "Ligne eSIM crédit",
+    "esimPermanent": "Ligne eSIM permanente"
+  },
+  "operators": {
+    "domestic": {
+      "hamrahAvval": "همراه اول",
+      "irancell": "ایرانسل",
+      "rightel": "رایتل"
+    },
+    "foreign": {
+      "vodafone": "Vodafone",
+      "tmobile": "T-Mobile",
+      "att": "AT&T",
+      "deutscheTelekon": "Deutsche Telekom",
+      "telefonica": "Telefonica"
+    }
+  }
+}
