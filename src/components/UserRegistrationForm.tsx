@@ -22,6 +22,7 @@ import { Step4ServiceSelection } from "./registration/Step4ServiceSelection";
 import { Step5OperatorSelection } from "./registration/Step5OperatorSelection";
 import { Step6PaymentGateway } from "./registration/Step6PaymentGateway";
 import { RegistrationSuccess } from "./registration/RegistrationSuccess";
+import { sendActivationEmailAndQr } from "@/services/activation";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -41,10 +42,13 @@ export function UserRegistrationForm() {
   const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState(1);
   const [step1Data, setStep1Data] = useState<Step1FormData | null>(null);
-  const [step2Data, setStep2Data] = useState<Step2FormData | null>(null);
+  // const [step2Data, setStep2Data] = useState<Step2FormData | null>(null);
   const [step3Data, setStep3Data] = useState<Step3FormData | null>(null);
   const [step4Data, setStep4Data] = useState<Step4FormData | null>(null);
   const [step5Data, setStep5Data] = useState<Step5FormData | null>(null);
+
+
+  const [sendingActivation, setSendingActivation] = useState(false);
 
   const onStep1Submit = (data: Step1FormData) => {
     setStep1Data(data);
@@ -55,7 +59,8 @@ export function UserRegistrationForm() {
   };
 
   const onStep2Submit = (data: Step2FormData) => {
-    setStep2Data(data);
+    void data;
+    // setStep2Data(data);
     setCurrentStep(3);
     toast.success(t("step2.uploadSuccess"));
   };
@@ -78,25 +83,39 @@ export function UserRegistrationForm() {
     toast.success(t("step5.operatorsSuccess"));
   };
 
-  const onStep6Submit = (data: Step6FormData) => {
-    const completeFormData = {
-      ...step1Data,
-      ...step2Data,
-      ...step3Data,
-      ...step4Data,
-      ...step5Data,
-      ...data,
-    };
-    console.log("Complete form data:", completeFormData);
-    toast.success(t("success.message"));
-    setCurrentStep(7);
-    // Here you would typically send data to an API
-  };
+ const onStep6Submit = async (data: Step6FormData) => {
+  void data;
+   const email = step1Data?.email?.trim();
+   const country = step5Data?.country?.trim();
+
+   if (!email) {
+     toast.error("Email is missing from Step 1.");
+     return;
+   }
+   if (!country) {
+     toast.error("Country is missing from Step 5.");
+     return;
+   }
+
+   setSendingActivation(true);
+   try {
+     await toast.promise(sendActivationEmailAndQr({ email, country }), {
+       loading: "Finalizing your registration…",
+       success: "Activation email with your eSIM QR has been sent!",
+       error: "Could not finalize registration. Please try again.",
+     });
+
+     // All good → move to success
+     setCurrentStep(7);
+   } finally {
+     setSendingActivation(false);
+   }
+ };
 
   const onNewRegistration = () => {
     setCurrentStep(1);
     setStep1Data(null);
-    setStep2Data(null);
+    // setStep2Data(null);
     setStep3Data(null);
     setStep4Data(null);
     setStep5Data(null);
@@ -199,14 +218,6 @@ export function UserRegistrationForm() {
               <Step6PaymentGateway
                 onSubmit={onStep6Submit}
                 onBack={() => setCurrentStep(5)}
-                // totalAmount={
-                //   // Calculate total amount from step4Data and step5Data
-                //   (step4Data.esimLineType === "خط eSIM اعتباری"
-                //     ? 1500000
-                //     : 6000000) +
-                //   step5Data.domesticOperators.length * 1000000 +
-                //   step5Data.foreignOperators.length * 1500000
-                // }
               />
             )}
 
@@ -216,6 +227,7 @@ export function UserRegistrationForm() {
                 lastName={step1Data.lastName}
                 selectedNumbers={step3Data.selectedNumbers}
                 onNewRegistration={onNewRegistration}
+                email={step1Data.email} // ← pass email to show in UI
               />
             )}
           </AnimatePresence>

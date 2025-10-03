@@ -1,6 +1,4 @@
-// 
-
-
+//
 
 import { z } from "zod";
 
@@ -11,7 +9,7 @@ const createStep1Schema = () =>
     firstName: z.string().min(2, "validation.firstNameMin"),
     lastName: z.string().min(2, "validation.lastNameMin"),
     nationalId: z.string().regex(/^\d{10}$/, "validation.nationalIdFormat"),
-    email: z.string().min(2, "validation.email"),
+    email: z.string().email("validation.email"), // ← change from min(2) to email()
   });
 
 // Step 1 Schema
@@ -34,7 +32,9 @@ export const step2Schema = z.object({
 /* ---------------------------------- Step 3 --------------------------------- */
 export const step3Schema = z.object({
   selectedNumbers: z.array(z.string()).min(1, "validation.selectNumbers"),
-  acceptTerms: z.boolean().refine((val) => val === true, "validation.acceptTerms"),
+  acceptTerms: z
+    .boolean()
+    .refine((val) => val === true, "validation.acceptTerms"),
 });
 
 /* ---------------------------------- Step 4 --------------------------------- */
@@ -48,7 +48,13 @@ export const step4Schema = z.object({
 /**
  * Continent and Country configuration
  */
-export const CONTINENTS = ["Asia", "Europe", "America", "Australia", "Africa"] as const;
+export const CONTINENTS = [
+  "Asia",
+  "Europe",
+  "America",
+  "Australia",
+  "Africa",
+] as const;
 export type Continent = (typeof CONTINENTS)[number];
 
 // Continents that remain disabled in the UI
@@ -72,11 +78,14 @@ export type Country = AsiaCountry | EuropeCountry;
  */
 export const step5Schema = z
   .object({
-    continent: z.enum(CONTINENTS, { required_error: "validation.selectContinent" }),
+    continent: z.enum(CONTINENTS, {
+      required_error: "validation.selectContinent",
+    }),
     country: z.string().optional(),
   })
   .superRefine((data, ctx) => {
-    const isAsiaOrEurope = data.continent === "Asia" || data.continent === "Europe";
+    const isAsiaOrEurope =
+      data.continent === "Asia" || data.continent === "Europe";
     if (isAsiaOrEurope) {
       if (!data.country) {
         ctx.addIssue({
@@ -165,7 +174,8 @@ export type ServiceKey = (typeof AVAILABLE_SERVICES)[number];
 /** Helpers to build translation keys (optional) */
 export const getEsimLineTypeI18nKey = (key: EsimLineTypeKey) =>
   `step4.esimLineTypes.${key}` as const;
-export const getServiceI18nKey = (key: ServiceKey) => `services.${key}` as const;
+export const getServiceI18nKey = (key: ServiceKey) =>
+  `services.${key}` as const;
 
 /* --------- (Deprecated) Operators — kept for backward compatibility -------- */
 /** @deprecated Not used in Step 5 anymore */
@@ -213,6 +223,8 @@ export const CRYPTOCURRENCY_METHODS = [
   "Dogecoin (DOGE)",
 ] as const;
 
-export type InternalPaymentMethodType = (typeof INTERNAL_PAYMENT_METHODS)[number];
-export type ExternalPaymentMethodType = (typeof EXTERNAL_PAYMENT_METHODS)[number];
+export type InternalPaymentMethodType =
+  (typeof INTERNAL_PAYMENT_METHODS)[number];
+export type ExternalPaymentMethodType =
+  (typeof EXTERNAL_PAYMENT_METHODS)[number];
 export type CryptocurrencyMethodType = (typeof CRYPTOCURRENCY_METHODS)[number];
