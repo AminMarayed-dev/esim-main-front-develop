@@ -48,7 +48,8 @@ export function UserRegistrationForm() {
   const [step5Data, setStep5Data] = useState<Step5FormData | null>(null);
 
 
-  const [sendingActivation, setSendingActivation] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [, setSendingActivation] = useState(false);
 
   const onStep1Submit = (data: Step1FormData) => {
     setStep1Data(data);
@@ -87,6 +88,8 @@ export function UserRegistrationForm() {
   void data;
    const email = step1Data?.email?.trim();
    const country = step5Data?.country?.trim();
+   const first_name = step1Data?.firstName?.trim();
+   const last_name = step1Data?.lastName?.trim();
 
    if (!email) {
      toast.error("Email is missing from Step 1.");
@@ -99,7 +102,7 @@ export function UserRegistrationForm() {
 
    setSendingActivation(true);
    try {
-     await toast.promise(sendActivationEmailAndQr({ email, country }), {
+     await toast.promise(sendActivationEmailAndQr({ email, country, first_name, last_name }), {
        loading: "Finalizing your registration…",
        success: "Activation email with your eSIM QR has been sent!",
        error: "Could not finalize registration. Please try again.",

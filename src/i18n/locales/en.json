@@ -206,7 +206,8 @@
       "question": "Do you want to register for someone else too?",
       "newRegistration": "New Registration"
     },
-    "footer": "Iran's first eSIM network, Dariya Cell, belongs to Daria Intelligent Exchange & Analytics Co."
+    "footer": "Iran's first eSIM network, Dariya Cell, belongs to Daria Intelligent Exchange & Analytics Co.",
+    "emailNotice": "✅ Your activation link and eSIM QR have been sent to {{email}}. If you don't see it, please check your spam/junk folder."
   },
   "validation": {
     "firstNameMin": "First name must be at least 2 characters",

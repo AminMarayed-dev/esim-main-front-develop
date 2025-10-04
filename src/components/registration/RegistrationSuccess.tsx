@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import {
   CheckCircle,
@@ -26,7 +25,12 @@ const containerVariants = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.6, type: "spring" as const, stiffness: 100, damping: 15 },
+    transition: {
+      duration: 0.6,
+      type: "spring" as const,
+      stiffness: 100,
+      damping: 15,
+    },
   },
 };
 
@@ -50,7 +54,11 @@ const numberItemVariants = {
   visible: (index: number) => ({
     opacity: 1,
     x: 0,
-    transition: { delay: 0.5 + index * 0.1, duration: 0.5, type: "spring" as const },
+    transition: {
+      delay: 0.5 + index * 0.1,
+      duration: 0.5,
+      type: "spring" as const,
+    },
   }),
 };
 
@@ -59,7 +67,7 @@ export function RegistrationSuccess({
   lastName,
   selectedNumbers,
   onNewRegistration,
-  email
+  email,
 }: RegistrationSuccessProps) {
   const { t } = useTranslation();
   const confettiEmojis = ["🎉", "✨", "🎊", "⭐", "💫", "🌟"];
@@ -171,9 +179,7 @@ export function RegistrationSuccess({
           className="max-w-xl mx-auto bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-xl p-4"
         >
           <p className="text-sm md:text-base text-green-800 dark:text-green-300">
-            ✅ Your activation link and eSIM QR have been sent to{" "}
-            <span className="font-semibold">{email}</span>. If you don't see it,
-            please check your spam/junk folder.
+            {t("success.emailNotice", { email })}
           </p>
         </motion.div>
       )}
@@ -319,4 +325,3 @@ export function RegistrationSuccess({
     </motion.div>
   );
 }
-

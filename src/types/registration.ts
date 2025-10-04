@@ -1,18 +1,14 @@
-//
-
 import { z } from "zod";
 
 /* ---------------------------------- Step 1 --------------------------------- */
-// Helper function to create localized schema (this will be enhanced later)
 const createStep1Schema = () =>
   z.object({
     firstName: z.string().min(2, "validation.firstNameMin"),
     lastName: z.string().min(2, "validation.lastNameMin"),
     nationalId: z.string().regex(/^\d{10}$/, "validation.nationalIdFormat"),
-    email: z.string().email("validation.email"), // ← change from min(2) to email()
+    email: z.string().email("validation.email"), // email format
   });
 
-// Step 1 Schema
 export const step1Schema = createStep1Schema();
 
 /* ---------------------------------- Step 2 --------------------------------- */
@@ -32,9 +28,7 @@ export const step2Schema = z.object({
 /* ---------------------------------- Step 3 --------------------------------- */
 export const step3Schema = z.object({
   selectedNumbers: z.array(z.string()).min(1, "validation.selectNumbers"),
-  acceptTerms: z
-    .boolean()
-    .refine((val) => val === true, "validation.acceptTerms"),
+  acceptTerms: z.boolean().refine((val) => val === true, "validation.acceptTerms"),
 });
 
 /* ---------------------------------- Step 4 --------------------------------- */
@@ -45,25 +39,16 @@ export const step4Schema = z.object({
 });
 
 /* ---------------------- NEW: Step 5 (Continent & Country) ------------------ */
-/**
- * Continent and Country configuration
- */
-export const CONTINENTS = [
-  "Asia",
-  "Europe",
-  "America",
-  "Australia",
-  "Africa",
-] as const;
+/** Continent and Country configuration */
+export const CONTINENTS = ["Asia", "Europe", "America", "Australia", "Africa"] as const;
 export type Continent = (typeof CONTINENTS)[number];
 
-// Continents that remain disabled in the UI
 export const ENABLED_CONTINENTS = ["Asia", "Europe"] as const;
 export const DISABLED_CONTINENTS = ["America", "Australia", "Africa"] as const;
 
 export const COUNTRY_BY_CONTINENT = {
-  Asia: ["Iran", "Arabia"] as const,
-  Europe: ["Germany"] as const,
+  Asia: ["iran", "arabistan"] as const,
+  Europe: ["germany"] as const,
 } as const;
 
 export type AsiaCountry = (typeof COUNTRY_BY_CONTINENT)["Asia"][number];
@@ -72,20 +57,19 @@ export type Country = AsiaCountry | EuropeCountry;
 
 /**
  * Step 5 Schema
- * - Continent is required (but some are disabled in UI).
+ * - Continent is required.
  * - If Asia or Europe is selected, `country` is required and must be valid for that continent.
- * - If a disabled continent is chosen (shouldn't happen from UI), `country` must not be set.
+ * - If a disabled continent is chosen (shouldn't happen via UI), `country` must NOT be set.
  */
 export const step5Schema = z
   .object({
-    continent: z.enum(CONTINENTS, {
-      required_error: "validation.selectContinent",
-    }),
+    // ✅ FIX: use a string or { message } as the second parameter
+    continent: z.enum(CONTINENTS, "validation.selectContinent"),
     country: z.string().optional(),
   })
   .superRefine((data, ctx) => {
-    const isAsiaOrEurope =
-      data.continent === "Asia" || data.continent === "Europe";
+    const isAsiaOrEurope = data.continent === "Asia" || data.continent === "Europe";
+
     if (isAsiaOrEurope) {
       if (!data.country) {
         ctx.addIssue({
@@ -99,6 +83,7 @@ export const step5Schema = z
         data.continent === "Asia"
           ? new Set<string>(COUNTRY_BY_CONTINENT.Asia as readonly string[])
           : new Set<string>(COUNTRY_BY_CONTINENT.Europe as readonly string[]);
+
       if (!validSet.has(data.country)) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
@@ -107,7 +92,7 @@ export const step5Schema = z
         });
       }
     } else {
-      // For disabled continents, no country must be supplied
+      // Disabled continents: country must not be supplied
       if (data.country) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
@@ -119,7 +104,6 @@ export const step5Schema = z
   });
 
 /* ---------------------------------- Step 6 --------------------------------- */
-// Step 6 Schema (Payment)
 export const step6Schema = z.object({
   paymentMethod: z.string().min(1, "validation.selectPaymentMethod"),
   paymentGateway: z.enum(["internal", "external"]),
@@ -171,24 +155,14 @@ export const AVAILABLE_SERVICES = [
 ] as const;
 export type ServiceKey = (typeof AVAILABLE_SERVICES)[number];
 
-/** Helpers to build translation keys (optional) */
 export const getEsimLineTypeI18nKey = (key: EsimLineTypeKey) =>
   `step4.esimLineTypes.${key}` as const;
 export const getServiceI18nKey = (key: ServiceKey) =>
   `services.${key}` as const;
 
 /* --------- (Deprecated) Operators — kept for backward compatibility -------- */
-/** @deprecated Not used in Step 5 anymore */
-export const DOMESTIC_OPERATORS = ["همراه اول", "ایرانسل", "رایتل"] as const;
-/** @deprecated Not used in Step 5 anymore */
-export const FOREIGN_OPERATORS = [
-  "vodafone",
-  "t-mobile",
-  "AT&T",
-  "Deutsche telekon",
-  "telefonica",
-] as const;
-
+export const DOMESTIC_OPERATORS = ["همراه اول", "ایرانسل", "رایتل"] as const; // @deprecated
+export const FOREIGN_OPERATORS = ["vodafone", "t-mobile", "AT&T", "Deutsche telekon", "telefonica"] as const; // @deprecated
 export type DomesticOperatorType = (typeof DOMESTIC_OPERATORS)[number];
 export type ForeignOperatorType = (typeof FOREIGN_OPERATORS)[number];
 
@@ -223,8 +197,6 @@ export const CRYPTOCURRENCY_METHODS = [
   "Dogecoin (DOGE)",
 ] as const;
 
-export type InternalPaymentMethodType =
-  (typeof INTERNAL_PAYMENT_METHODS)[number];
-export type ExternalPaymentMethodType =
-  (typeof EXTERNAL_PAYMENT_METHODS)[number];
+export type InternalPaymentMethodType = (typeof INTERNAL_PAYMENT_METHODS)[number];
+export type ExternalPaymentMethodType = (typeof EXTERNAL_PAYMENT_METHODS)[number];
 export type CryptocurrencyMethodType = (typeof CRYPTOCURRENCY_METHODS)[number];
